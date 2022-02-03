@@ -5,6 +5,8 @@ class Member:
     def greet(self):
         print(f"Hi, my name is {self.full_name}!")
 
-# bella= Member("Nabila Digourdi")
-# bella.greet()
-        
+class Student(Member):
+    def __init__(self, full_name, reason):
+        super().__init__(full_name)
+        self.reason = reason
+

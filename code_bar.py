@@ -10,3 +10,7 @@ class Student(Member):
         super().__init__(full_name)
         self.reason = reason
 
+class Instructor(Member):
+    def __init__(self, full_name, bio):
+        super().__init__(full_name)
+        self.bio= bio

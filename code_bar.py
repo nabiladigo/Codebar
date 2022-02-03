@@ -25,24 +25,6 @@ class Workshop():
         self.student =[]
         self.instructor = []
 
-    def add_participant(self, member):
-        if (type(member).__name__) == 'Student':
-            self.student.append(member)
-        elif (type(member).__name__) == 'Instructor':
-            self.instructor.append(member)
-        else:
-            print("member doesn't exist")
-    
-    def print_details(self):
-        print(f"Workshop details : {self.date}, {self.subject}")
-        print("Students:")
-        for i, student in enumerate(self.student):
-            print(f"{i+1}. {student.full_name} and {student.reason} ")
-        print("Instructor:")
-        for i, instructor in enumerate(self.instructor):
-            print(f"{i+1}. {instructor.full_name} - {instructor.skills}\n and {instructor.bio} ")
-
-
 workshop = Workshop("12/03/2014", "Shutl")
 
 jane = Student("Jane Doe", "I am trying to learn programming and need some help")
